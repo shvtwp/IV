@@ -8,12 +8,12 @@ La familia de una persona en situación de dependencia necesita repartirse el cu
 
 ## Perfil de GitHub
 
-![Profile Picture](docs/pfp.png)
+![Profile Picture](doc/pfp.png)
 
 ## Clave SSH
 
-![SSH Key](docs/sshkey.png)
+![SSH Key](doc/sshkey.png)
 
 ## Configuración
 
-![Configuración GH](docs/capturaiv.png)
+![Configuración GH](doc/capturaiv.png)
