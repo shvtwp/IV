@@ -6,10 +6,13 @@ La familia de una persona en situación de dependencia necesita repartirse el cu
 
 ## Documentación
 [Historias de usuario](docs/HUs.md)
+
 [Milestones](docs/milestones.md)
 
 
 ## Configuración de GitHub
 [Foto de Perfil](docs/pfp.png)
+
 [Clave SSH](docs/sshkey.png)
+
 [Configuración GitHub](docs/capturaiv.png)
