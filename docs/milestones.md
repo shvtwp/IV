@@ -14,6 +14,6 @@
 
 ## [M2] Implementación del algoritmo de scheduling
 
-- **Objetivo:** Implementar un algoritmo de scheduling que ***divida de forma equitativa** el horario de cuidado a la persona en situación de dependencia entre sus familiares.
+- **Objetivo:** Implementar un algoritmo de scheduling que **divida de forma equitativa** el horario de cuidado a la persona en situación de dependencia entre sus familiares.
 - **Entregable:** Código fuente del algoritmo.
 - **Será viable:** Cuando pase los tests.
