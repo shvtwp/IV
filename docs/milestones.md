@@ -6,7 +6,7 @@
 - **Entregable:** Código organizado de manera modular el modelo del problema.
 - **Será viable:** Cuando lo aprueben el product manager o el responsable del proyecto.
 
-## [M1] Horario cubierto
+## [M1] Horario equitativo
 
 - **Objetivo:** **Cubrir todas las horas del horario de forma equitativa** según la disponibilidad de los familiares, o en su defecto, con profesionales.
 - **Entregable:** Código fuente de la clase o módulo.
