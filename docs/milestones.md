@@ -8,7 +8,7 @@
 
 ## [M1] Implementación de un horario cubierto
 
-- **Objetivo:** Cubrir las horas del horario con las horas de disponibilidad de los familiares, o en su defecto, con las de profesionales.
+- **Objetivo:** **Cubrir todas las horas** del horario según la disponibilidad de los familiares, o en su defecto, con profesionales.
 - **Entregable:** Código fuente de la clase o módulo.
 - **Será viable:** Cuando pase los tests.
 
