@@ -1,4 +1,7 @@
 # Historias de usuario
 
-## [HU1]
+## [HU1] Problema con los horarios
 Me llamo Pablo y tengo 24 años. Desde hace unos años mi abuela tiene Alzheimer, por lo que no podemos dejarla sola. A mi familia y a mí nos gustaría contar con un horario que se ajuste a la disponibilidad de cada uno de nosotros para así poder acompañarla, repartiendo los turnos de manera que nadie tenga que pasar demasiadas horas seguidas, requiriendo si es necesario la ayuda de un profesional, aunque preferimos que esa situación se dé lo menos posible, solo en momentos en los que nadie esté disponible, o quien lo esté tenga que descansar.
+
+## [HU2] Asignaciones prioritarias
+Soy María, 46 años, hija de un enfermo de ELA. A la hora de organizarme con mis hermanos para atender a su cuidado, nos hemos dado cuenta de que no logramos hallar la mejor manera. Yo, por ejemplo, trabajo 8 horas diarias, a veces más, y al llegar a casa, a las 4 o 5 horas, siento que no puedo estar tan atenta y he llegado a cometer errores del propio cansancio. Por ello, nos gustaría tener un horario que priorice la equidad y no la igualdad, teniendo en cuenta que hay gente que no trabaja y podría pasar más horas que alguien que sí lo hace. También hemos pensado en incluir en el cuidado a sus nietos, aunque comprendemos que son jóvenes y no se les debe cargar con la misma responsabilidad que a los adultos, asignándoles quizá como máximo 4 horas semanales.
