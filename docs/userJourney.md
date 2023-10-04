@@ -21,6 +21,5 @@ en un hospital son 12h diarias, por lo que considero que un familiar no debería
 [Historia de usuario de Marina](https://github.com/shvtwp/DePendiente/blob/Objetivo-1/docs/HUs.md#hu3-nos-estamos-planteando-un-centro-de-atenci%C3%B3n)
 
 A Marina le gustaría saber si es más barato para ella contratar a un interno o ingresar a su suegro en un geriátrico. Los requisitos que debe cumplir están publicados
-en la siguiente página:
-
+en el siguiente enlace:
 [Información sobre los centros de atención socio-sanitaria](https://administracion.gob.es/pag_Home/Tu-espacio-europeo/derechos-obligaciones/ciudadanos/asistencia-sanitaria/centros-atencion-sociosanitaria.html#-2caf6ede2660)
