@@ -8,6 +8,8 @@ La familia de una persona en situación de dependencia necesita repartirse el cu
 
 [Milestones](docs/milestones.md)
 
+[User Journey](docs/userJourney.md)
+
 
 ## Configuración de GitHub
 [Foto de Perfil](docs/pfp.png)
