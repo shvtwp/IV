@@ -6,8 +6,14 @@
 - **Entregable:** Código organizado de manera modular el modelo del problema.
 - **Será viable:** Cuando lo aprueben el product manager o el responsable del proyecto.
 
-## [M1] Horario equitativo
+## [M1] Horario igualitario
 
-- **Objetivo:** **Cubrir todas las horas del horario de forma equitativa** según la disponibilidad de los familiares, o en su defecto, con profesionales.
+- **Objetivo:** **Cubrir todas las horas del horario de forma igualitaria** según la disponibilidad de los familiares, o en su defecto, con profesionales.
+- **Entregable:** Código fuente de la clase o módulo.
+- **Será viable:** Cuando pase los tests.
+
+## [M2] Horario equitativo
+
+- **Objetivo:** **Dividir las horas del horario de forma equitativa** priorizando la asignación de las horas de cuidado a gente adulta que no trabaje, después gente adulta, y después jóvenes.
 - **Entregable:** Código fuente de la clase o módulo.
 - **Será viable:** Cuando pase los tests.
