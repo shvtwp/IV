@@ -17,3 +17,9 @@
 - **Objetivo:** **Dividir las horas del horario de forma equitativa** priorizando la asignación de las horas de cuidado a gente adulta que no trabaje, después gente adulta, y después jóvenes.
 - **Entregable:** Código fuente de la clase o módulo.
 - **Será viable:** Cuando pase los tests.
+
+## [M3] Recomendación de ingreso a centro
+
+- **Objetivo:** Recomendar el ingreso a un centro si la persona que requiere los cuidados cumple los requisitos y es más barato que contratar a auxiliares.
+- **Entregable:** Código fuente de la clase o módulo.
+- **Será viable:** Cuando pase los tests.
