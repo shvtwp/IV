@@ -1,10 +1,6 @@
 
-interface IntervaloHorario {
-   fechaInicio : Date;
-   fechaFin : Date;
-}
 
-enum Preferencia {
+enum Condicion {
    ESTUDIANTE,
    TRABAJADOR,
    NO_TRABAJADOR
@@ -14,12 +10,12 @@ export class Cuidador{
    
    readonly id: number;
    readonly horarioNoDisponible: Array<IntervaloHorario>;
-   readonly preferencia : Preferencia;
+   readonly condicion : Condicion;
 
-   constructor(id: number, horarioNoDisponible: Array<IntervaloHorario>, preferencia: Preferencia){
+   constructor(id: number, horarioNoDisponible: Array<IntervaloHorario>, condicion: Condicion){
       this.id = id;
       this.horarioNoDisponible = horarioNoDisponible;
-      this.preferencia = preferencia;
+      this.condicion = condicion;
    }
 }
 
