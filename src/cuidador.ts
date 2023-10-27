@@ -1,4 +1,8 @@
 
+interface IntervaloHorario {
+   fechaInicio : Date;
+   fechaFin : Date;
+}
 
 enum Condicion {
    ESTUDIANTE,
