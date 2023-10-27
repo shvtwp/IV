@@ -4,13 +4,13 @@ interface IntervaloHorario {
    fechaFin : Date;
 }
 
-enum Condicion {
-   ESTUDIANTE,
+export enum Condicion {
+   PERSONA_JOVEN,
    TRABAJADOR,
    NO_TRABAJADOR
 }
 
-export class Cuidador{
+export class PersonaCuidadora{
    
    readonly id: number;
    readonly horarioNoDisponible: Array<IntervaloHorario>;
