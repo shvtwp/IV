@@ -1,15 +1,10 @@
 
-import { PersonaCuidadora } from './cuidador';
+import { PersonaCuidadora } from './persona_cuidadora';
 
 class Horario{
 
    private idPersonaAtendida: number;
    private personasCuidadorasDisponibles: Array<PersonaCuidadora>;
-
-   constructor(idPersonaAtendida: number){
-      this.idPersonaAtendida = idPersonaAtendida;
-      this.personasCuidadorasDisponibles = [];
-   }
 
    private getNumeroHorasLibres(personaCuidadora: PersonaCuidadora): number{
       // TO DO
