@@ -11,6 +11,10 @@ class Horario{
       private personasCuidadorasDisponibles: Array<PersonaCuidadora>
    ){}
 
+   public asignarIntervaloHorarioAProfesional(){
+      // TO DO
+   }
+
    public elegirPersonaCuidadora(personasCuidadoras: Array<PersonaCuidadora>): PersonaCuidadora{
       // TO DO
       return null;
