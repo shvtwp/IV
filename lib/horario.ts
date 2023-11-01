@@ -1,24 +1,16 @@
+import { FamiliarCuidador } from "./familiar_cuidador";
+import { Fecha, TurnoCuidado } from "./turno_cuidado";
 
-import { IntervaloHorario, PersonaCuidadora } from './persona_cuidadora';
-
-const LIMITE_HORAS_POR_DIA_PERSONA_JOVEN = 2;
-const LIMITE_HORAS_POR_DIA_PERSONA_ADULTA = 4;
+const LIMITE_HORAS_POR_SEMANA_PERSONA_JOVEN = 4;
 
 class Horario{
 
    constructor(
       private idPersonaAtendida: number,
-      private personasCuidadorasDisponibles: Array<PersonaCuidadora>
+      private familiaresCuidadoresDisponibles: Array<FamiliarCuidador>,
+      private asignacionFamiliarATurno: Map<number, TurnoCuidado>,
+      private horasAsignadasAProfesional: Array<TurnoCuidado>
    ){}
-
-   public asignarIntervaloHorarioAProfesional(){
-      // TO DO
-   }
-
-   public elegirPersonaCuidadora(personasCuidadoras: Array<PersonaCuidadora>): PersonaCuidadora{
-      // TO DO
-      return null;
-   }
 
 }
 
