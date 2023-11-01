@@ -1,6 +1,8 @@
 import { FamiliarCuidador } from "./familiar_cuidador";
 import { TurnoCuidado } from "./turno_cuidado";
 
+const LIMITE_HORAS_POR_SEMANA_PERSONA_JOVEN = 4;
+
 class Horario{
 
    constructor(
