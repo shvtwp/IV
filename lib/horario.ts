@@ -10,5 +10,10 @@ class Horario{
       private horasAsignadasAProfesional: Array<TurnoCuidado>
    ){}
 
+   private getFamiliarAAsignarConMasHorasDisponibles(): FamiliarCuidador{
+      // TO DO
+      return null;
+   }
+
 }
 
