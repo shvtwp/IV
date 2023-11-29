@@ -10,6 +10,11 @@ La familia de una persona en situación de dependencia necesita repartirse el cu
 
 [User Journey](docs/userJourney.md)
 
+[Runtime](docs/runtime.md)
+
+[Gestor de tareas](docs/gestor_tareas.md)
+
+[Gestot de dependencias](docs/gestor_dependencias.md)
 
 ## Configuración de GitHub
 [Foto de Perfil](docs/pfp.png)
