@@ -2,7 +2,7 @@ import { desc, run, task, sh} from "https://deno.land/x/drake@v1.6.0/mod.ts";
 
 // Tarea para verificar el código
 desc("Verificar código");
-task("verificarCodigo", [], function verificarCodigo() {
+task("check", [], function verificarCodigo() {
     sh("deno check lib/horario.ts");
 });
 
@@ -14,7 +14,7 @@ task("ejecutarAplicacion", [], function ejecutarAplicacion() {
 
 // Tarea por defecto
 desc("Tarea por defecto");
-task("default", ["verificarCodigo", "ejecutarAplicacion"]);
+task("default", ["check", "ejecutarAplicacion"]);
 
 // Ejecutar tareas al ejecutar el Drakefile
 run();
