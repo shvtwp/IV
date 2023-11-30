@@ -1,2 +1,5 @@
 lenguaje: TypeScript
 entidad: lib/horario.ts
+automatizar:
+  fichero: drakefile.ts
+  orden: deno run -A drakefile.ts default
