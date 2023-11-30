@@ -12,6 +12,7 @@ herramienta seleccionada.
 
 He pensado que no tiene mucho sentido considerar gestores de tareas externos
 que no estén pensados especialmente para Deno, ya que el mismo runtime integra
+<<<<<<< HEAD
 uno, así que la cuestión pasa a ser si merece o no la pena usar alguna otra
 herramienta diseñada concretamente para Deno.
 
@@ -37,6 +38,7 @@ Su última actualización fue hace tres semanas, pero parece ser poco
 conocido, por lo que no hay mucha información sobre él, ni tampoco
 feedback por parte de la comunidad, lo que dificulta su aprendizaje.
 Además, no estoy trabajando en un proyecto de mucha complejidad.
+
 
 # Elección final
 
