@@ -12,7 +12,6 @@ herramienta seleccionada.
 
 He pensado que no tiene mucho sentido considerar gestores de tareas externos
 que no estén pensados especialmente para Deno, ya que el mismo runtime integra
-<<<<<<< HEAD
 uno, así que la cuestión pasa a ser si merece o no la pena usar alguna otra
 herramienta diseñada concretamente para Deno.
 
@@ -20,7 +19,7 @@ herramienta diseñada concretamente para Deno.
 
 Como hemos mencionado con anterioridad, es el runtime elegido. Implementa un
 gestor de tareas, no es necesario usar uno externo, lo que favorece la
-simplicidad.
+simplicidad, al reducir el número de herramientas utilizadas.
 
 ## Drake
 
@@ -44,5 +43,7 @@ Además, no estoy trabajando en un proyecto de mucha complejidad.
 
 No es un gran problema que Drake sea un gestor de tareas externo porque
 está diseñado específicamente para Deno, lo que facilita en gran medida
-su integración. Además, me parece muy interesante que se haya estructurado
-de manera que favorezca a su comprensión, por lo que he decidido usar Drake.
+su integración. Además, me resulta muy favorable que un Drakefile se
+escriba en TypeScript, el mismo lenguaje de programación en el que se 
+escribe el proyecto, por lo que no sería necesario aprender otro, así
+que he decidido usar Drake.
