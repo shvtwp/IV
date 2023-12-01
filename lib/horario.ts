@@ -1,5 +1,5 @@
-import { FamiliarCuidador } from "./familiar_cuidador";
-import { TurnoCuidado } from "./turno_cuidado";
+import { FamiliarCuidador } from "./familiar_cuidador.ts";
+import { TurnoCuidado } from "./turno_cuidado.ts";
 
 const LIMITE_HORAS_POR_SEMANA_PERSONA_JOVEN = 4;
 
@@ -12,10 +12,10 @@ class Horario{
       private horasAsignadasAProfesional: Array<TurnoCuidado>
    ){}
 
-   private getFamiliarAAsignarConMasHorasDisponibles(): FamiliarCuidador{
+   /*private getFamiliarAAsignarConMasHorasDisponibles(): FamiliarCuidador{
       // TO DO
       return null;
-   }
+   }*/
 
 }
 
