@@ -1,21 +1,15 @@
-import { FamiliarCuidador } from "./familiar_cuidador.ts";
-import { TurnoCuidado } from "./turno_cuidado.ts";
+import { Cuidador } from "./cuidador.ts";
 
-const LIMITE_HORAS_POR_SEMANA_PERSONA_JOVEN = 4;
+const HORAS_SEMANALES = 168;
+const LIMITE_HORAS_POR_SEMANA_EMPLEADO = 30, LIMITE_HORAS_POR_SEMANA_DESEMPLEADO = 40,
+      LIMITE_HORAS_POR_SEMANA_PERSONA_JOVEN = 6;
 
-class Horario{
+export class Horario{
 
    constructor(
-      private idPersonaAtendida: number,
-      private familiaresCuidadoresDisponibles: Array<FamiliarCuidador>,
-      private asignacionFamiliarATurno: Map<number, TurnoCuidado>,
-      private horasAsignadasAProfesional: Array<TurnoCuidado>
+      public cuidadoresDisponibles: Array<Cuidador>,
+      public turnos: Map<number, Cuidador>
    ){}
-
-   /*private getFamiliarAAsignarConMasHorasDisponibles(): FamiliarCuidador{
-      // TO DO
-      return null;
-   }*/
 
 }
 
