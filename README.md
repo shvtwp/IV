@@ -9,6 +9,12 @@ La familia de una persona en situación de dependencia necesita repartirse el cu
 deno run -A drakefile.ts default check
 ```
 
+## Pasar los test
+
+```bash
+deno run -A drakefile.ts default test
+```
+
 ## Documentación
 [Historias de usuario](docs/HUs.md)
 
