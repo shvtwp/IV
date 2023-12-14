@@ -1,12 +1,18 @@
-import { TurnoCuidado } from "./turno_cuidado.ts";
-
-const LIMITE_HORAS_SEGUIDAS_POR_TURNO_PERSONA_ADULTA = 4;
-
-export class FamiliarCuidador{
-   
-   constructor(
-      private turnosDisponibles: Array<TurnoCuidado>,
-      private esJoven : boolean
-   ){}
+export enum TipoPersona {
+   JOVEN,
+   EMPLEADO,
+   DESEMPLEADO
 }
 
+export class Cuidador{
+   
+   constructor(
+      public horasOcupadas: Array<boolean> = new Array(168).fill(false),
+      private _tipo : TipoPersona,
+      public horasCuidado : number
+   ){}
+
+   public get tipo() {
+      return this._tipo;
+   }
+}
