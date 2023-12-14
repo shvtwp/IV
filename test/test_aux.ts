@@ -46,3 +46,24 @@ function cupoAgotado (cuidador: Cuidador): boolean {
 function horaAsignada(horario: Horario, hora: number): boolean {
     return horario.turnos.get(hora) !== undefined;
 }
+
+export function turnoSobrepasado(horario: Horario) : boolean{
+    let sobrepasa = false;
+
+    for (let i = 0; i < horario.cuidadoresDisponibles.length; i++){
+        let cuidador = horario.cuidadoresDisponibles[i];
+        switch(true){
+            case (cuidador.tipo === TipoPersona.EMPLEADO) && (cuidador.horasCuidado > LIMITE_HORAS_POR_SEMANA_EMPLEADO):
+               sobrepasa = true;
+               break;
+            case (cuidador.tipo === TipoPersona.DESEMPLEADO) && (cuidador.horasCuidado > LIMITE_HORAS_POR_SEMANA_DESEMPLEADO):
+               sobrepasa = true;
+               break;
+            case (cuidador.tipo === TipoPersona.JOVEN) && (cuidador.horasCuidado > LIMITE_HORAS_POR_SEMANA_PERSONA_JOVEN):
+               sobrepasa = true;
+               break;
+         } 
+    }
+
+    return sobrepasa;
+}
