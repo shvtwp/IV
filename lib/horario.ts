@@ -11,5 +11,17 @@ export class Horario{
       public turnos: Map<number, Cuidador>
    ){}
 
+   public asignarTurnos(){
+      
+   }
+
+   public setHorasOcupadas(hora: number, duracion: number, cuidador: Cuidador){
+      if (hora + duracion > HORAS_SEMANALES){
+         throw new Error("El horario sobrepasa las 168 horas semanales");
+      }
+      for (let i = hora; i < hora + duracion; i++){
+         cuidador.horasOcupadas[i] = true;
+      }
+   }
 }
 
