@@ -1,3 +1,5 @@
+const HORAS_SEMANALES = 168;
+
 export enum TipoPersona {
    JOVEN,
    EMPLEADO,
@@ -7,7 +9,7 @@ export enum TipoPersona {
 export class Cuidador{
    
    constructor(
-      public horasOcupadas: Array<boolean> = new Array(168).fill(false),
+      public horasOcupadas: Array<boolean> = new Array(HORAS_SEMANALES).fill(false),
       private _tipo : TipoPersona,
       public horasCuidado : number
    ){}
