@@ -2,7 +2,7 @@ import * as mod from "https://deno.land/std@0.208.0/testing/bdd.ts";
 import { Horario } from "../lib/horario.ts";
 import { TipoPersona, Cuidador } from "../lib/cuidador.ts";
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/assert_equals.ts";
-import { todasLasHorasAsignadas, turnoSobrepasado } from "./test_aux.ts";
+import { todasLasHorasAsignadas, turnoSobrepasado, incompatibilidadHoraria } from "./test_aux.ts";
 
 
 mod.describe ("Horario - Asignación de turnos", () => {
@@ -48,5 +48,27 @@ mod.describe ("Horario - Asignación de turnos", () => {
         horario.asignarTurnos();
 
         assertEquals(turnoSobrepasado(horario), false, "Hay un cuidador que sobrepasa el cupo de horas");
+    });
+
+    mod.it("No asignar turnos a personas que no están disponibles", () => {
+        const horario = new Horario(new Array<Cuidador>(), new Map<number, Cuidador>());
+
+        const Violeta = new Cuidador([], TipoPersona.DESEMPLEADO, 0);
+        const Cris = new Cuidador([], TipoPersona.JOVEN, 0);
+        const Juanjo = new Cuidador([], TipoPersona.EMPLEADO, 0);
+        
+        horario.setHorasOcupadas(1, 8, Violeta);
+        horario.setHorasOcupadas(10, 8, Cris);
+        horario.setHorasOcupadas(10, 8, Juanjo);
+        horario.setHorasOcupadas(20, 4, Juanjo);
+        horario.setHorasOcupadas(30, 4, Juanjo);
+        
+        horario.cuidadoresDisponibles.push(Violeta);
+        horario.cuidadoresDisponibles.push(Cris);
+        horario.cuidadoresDisponibles.push(Juanjo);
+
+        horario.asignarTurnos();
+        
+        assertEquals(incompatibilidadHoraria(horario), false, "Se ha asignado un turno a una persona ocupada");
     });
 });

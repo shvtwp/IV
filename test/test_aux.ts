@@ -67,3 +67,17 @@ export function turnoSobrepasado(horario: Horario) : boolean{
 
     return sobrepasa;
 }
+
+export function incompatibilidadHoraria(horario: Horario) : boolean{
+    let incompatibilidad = false;
+    for (let i = 0; i < HORAS_SEMANALES; i++){
+        if (horaAsignada(horario, i) === true){
+            let cuidador = horario.turnos.get(i);
+            if (cuidador?.horasOcupadas[i] === true){
+                incompatibilidad = true;
+            }
+        }
+    }
+
+    return incompatibilidad;
+}
