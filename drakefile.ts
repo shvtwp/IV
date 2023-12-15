@@ -12,6 +12,12 @@ task("ejecutarAplicacion", [], function ejecutarAplicacion() {
     sh("deno run --allow-env --allow-net lib/horario.ts");
 });
 
+//Tarea para ejecutar los tests
+desc("Ejecutar los tests");
+task("testHorario", [], function ejecutarTests() {
+    sh("deno test test/horario_test.ts");
+});
+
 // Tarea por defecto
 desc("Tarea por defecto");
 task("default", ["check", "ejecutarAplicacion"]);
