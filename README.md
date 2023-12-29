@@ -15,6 +15,18 @@ deno run -A drakefile.ts default check
 deno run -A drakefile.ts default test
 ```
 
+## Docker
+
+Para construir la imagen: 
+```bash
+docker build -t shvtwp/dependiente .
+```
+
+Para ejecutar los test en el contenedor:
+```bash
+docker run -tv `pwd`:/app/test shvtwp/dependiente
+```
+
 ## Documentación
 [Historias de usuario](docs/HUs.md)
 
@@ -27,6 +39,8 @@ deno run -A drakefile.ts default test
 [Gestor de tareas](docs/gestor_tareas.md)
 
 [Gestot de dependencias](docs/gestor_dependencias.md)
+
+[Imagen base](docs/imagen_base.md)
 
 ## Configuración de GitHub
 [Foto de Perfil](docs/pfp.png)
