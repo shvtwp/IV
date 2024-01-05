@@ -1,11 +1,12 @@
-FROM denoland/deno:alpine
+ARG DENO_VERSION=1.39.2
 
-SHELL ["/bin/bash", "-c"]
+FROM denoland/deno:bin-$DENO_VERSION AS deno
+FROM ubuntu:latest
 
 LABEL maintainer="shvtwp"
 
-WORKDIR /app/test
+COPY --from=deno /deno /usr/local/bin/deno
 
-USER deno
+WORKDIR /app/test
 
 ENTRYPOINT ["deno", "test", "--allow-read", "test/horario_test.ts"]
