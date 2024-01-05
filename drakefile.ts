@@ -1,3 +1,5 @@
+Deno.env.set("SHELL", "/bin/sh");
+
 import { desc, run, task, sh} from "https://deno.land/x/drake@v1.6.0/mod.ts";
 
 // Tarea para verificar el código
@@ -20,7 +22,7 @@ task("testHorario", [], function ejecutarTests() {
 
 // Tarea por defecto
 desc("Tarea por defecto");
-task("default", ["check", "ejecutarAplicacion"]);
+task("default", ["check", "ejecutarAplicacion, testHorario"]);
 
 // Ejecutar tareas al ejecutar el Drakefile
 run();
