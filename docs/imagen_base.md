@@ -39,17 +39,19 @@ preinstaladas y es más veloz.
 
 ## Sistema operativo + Deno
 
+Por las razones expuestas antes, Alpine es el
+mejor SO a considerar.
+
 [Alpine](https://hub.docker.com/_/alpine) es una imagen muy pequeña, de
 solo 5MB, por lo que es una buena opción, a la
 que habría que instalarle Deno.
 
-[Ubuntu](https://hub.docker.com/_/ubuntu) es otra opción a considerar
-debido a que no pesa demasiado (26.01 MB) y personalmente
-estoy más familiarizada con este sistema operativo.
-
 ## Conclusión
 
-Finalmente, me he decantado por elegir Ubuntu e
+Finalmente, me he decantado por elegir Alpine e
 instalarle Deno, para profundizar en el aprendizaje
-y discernir de las elecciones de mis compañeros,
-además de que me resulta más familiar que Alpine.
+y discernir de las elecciones de mis compañeros.
+
+Resulta que al querer instalar Deno en mi imagen,
+tengo que usar Alpine con glibc, así que instalaré
+concretamente la versión que incluye [glibc](https://github.com/Docker-Hub-frolvlad/docker-alpine-glibc).
