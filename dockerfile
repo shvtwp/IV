@@ -1,12 +1,24 @@
-ARG DENO_VERSION=1.39.2
+FROM frolvlad/alpine-glibc:alpine-3.18
 
-FROM denoland/deno:bin-$DENO_VERSION AS deno
-FROM ubuntu:latest
+WORKDIR /
+
+RUN apk update && \
+    apk upgrade
+
+RUN apk add curl
+
+RUN adduser -D -u 1000 usuario
+
+USER usuario
+
+RUN curl -fsSL https://deno.land/x/install/install.sh | sh
+ENV DENO_INSTALL="/home/usuario/.deno"
+ENV PATH="${DENO_INSTALL}/bin:${PATH}"
 
 LABEL maintainer="shvtwp"
 
-COPY --from=deno /deno /usr/local/bin/deno
+COPY ./drakefile.ts .
 
-WORKDIR /app/test
+WORKDIR /app
 
-ENTRYPOINT ["deno", "test", "--allow-read", "test/horario_test.ts"]
+ENTRYPOINT ["deno", "run", "-A", "drakefile.ts", "testHorario"]
