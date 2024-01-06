@@ -11,7 +11,8 @@ RUN curl -fsSL https://deno.land/x/install/install.sh | sh
 
 ENV PATH="/home/usuario/.deno/bin:${PATH}"
 
-LABEL maintainer="shvtwp"
+LABEL maintainer="shvtwp" \
+      version="5.0.2"
 
 COPY ./drakefile.ts .
 
