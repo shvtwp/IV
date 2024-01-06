@@ -5,5 +5,4 @@
         "asserts": "https://deno.land/std@0.208.0/assert/assert_equals.ts",
         "mod": "https://deno.land/x/drake@v1.6.0/mod.ts"
     }
-    
 }
