@@ -1,7 +1,7 @@
-import * as mod from "https://deno.land/std@0.208.0/testing/bdd.ts";
+import * as mod from "BDD";
 import { Horario } from "../lib/horario.ts";
 import { TipoPersona, Cuidador } from "../lib/cuidador.ts";
-import { assertEquals } from "https://deno.land/std@0.208.0/assert/assert_equals.ts";
+import { assertEquals } from "asserts";
 import { todasLasHorasAsignadas, turnoSobrepasado, incompatibilidadHoraria } from "./test_aux.ts";
 
 

@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-glibc:alpine-3.18
+FROM frolvlad/alpine-glibc:alpine-3.18_glibc-2.34
 
 WORKDIR /
 
@@ -14,7 +14,7 @@ ENV PATH="/home/usuario/.deno/bin:${PATH}"
 LABEL maintainer="shvtwp" \
       version="5.0.2"
 
-COPY ./drakefile.ts .
+COPY ./drakefile.ts ./deno.json ./
 
 WORKDIR /app
 

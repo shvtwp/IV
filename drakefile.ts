@@ -1,6 +1,6 @@
 Deno.env.set("SHELL", "/bin/sh");
 
-import { desc, run, task, sh} from "https://deno.land/x/drake@v1.6.0/mod.ts";
+import { desc, run, task, sh} from "mod";
 
 // Tarea para verificar el código
 desc("Verificar código");
@@ -9,7 +9,7 @@ task("check", [], function verificarCodigo() {
 });
 
 // Tarea para ejecutar la aplicación
-desc("Ejecutardeno la aplicación");
+desc("Ejecutar la aplicación");
 task("ejecutarAplicacion", [], function ejecutarAplicacion() {
     sh("deno run --allow-env --allow-net lib/horario.ts");
 });
