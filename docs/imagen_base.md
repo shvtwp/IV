@@ -50,16 +50,21 @@ tratarse de una versión muy específica.
 de esta imagen oficial es que es pesada (117MB),
 por lo que no tiene mucho sentido usarla cuando 
 precisamente es lo que estamos queriendo evitar.
+Tiene una versión ligera llamada slim, la cual
+pesa 74.8MB, a la que habría que instalarle los
+comandos curl y unzip previos a la instalación
+de Deno. Se quedaría en 246MB.
 
-[Ubuntu](https://hub.docker.com/_/ubuntu) esta imagen,
+[Ubuntu](https://hub.docker.com/_/ubuntu): esta imagen,
 pese no a ser óptima por lo que pesa (77.9MB),
 es mejor que la opción mencionada anteriormente,
 ya que es aproximadamente un 33.4% más ligera.
 Añadiendo la instalación de Deno, el peso final
-de la imagen sería 223MB, que equivale a los 72MB
-que pesa Ubuntu más que Alpine.
+de la imagen sería 269MB.
 Si además usamos una estrategia de construcción
 multicapa, podemos reducir el tamaño a 215MB.
+Según he [leído](https://canonical.com/blog/minimal-ubuntu-released), la imagen oficial de Ubuntu ya
+es la minimal.
 
 ## Conclusión
 
@@ -68,5 +73,6 @@ que han usado la imagen oficial de Deno, siendo
 congruentes con los criterios establecidos y 
 tratando de seguir al máximo las buenas prácticas,
 la mejor alternativa es usar la imagen oficial de
-Ubuntu y tratar de reducir al máximo su tamaño al
-instalarle Deno.
+Debian ligera, e instalarle Deno.
+No realizaré la construcción en dos capas, 
+priorizando simplicidad a eficiencia.
