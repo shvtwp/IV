@@ -3,9 +3,7 @@ name: Docker Hub Container
 on:
   push:
     paths:
-      - 'Dockerfile'
-      - 'deno.lock'
-      - 'deno.json'
+      - 'dockerfile'
 
 jobs:
   build:
