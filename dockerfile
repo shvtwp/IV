@@ -32,8 +32,8 @@ ENV PATH="/home/usuario/.deno/bin:${PATH}"
 LABEL maintainer="shvtwp" \
       version="5.0.2"
 
-WORKDIR /app/test
-
 COPY ./drakefile.ts ./deno.json ./deno.lock ./
+
+WORKDIR /app/test
 
 ENTRYPOINT ["deno", "run", "-A", "drakefile.ts", "test"]
