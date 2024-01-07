@@ -30,28 +30,43 @@ La única opción lo suficientemente desarrollada y
 actualizada con frecuencia que tiene Deno preinstalado
 es [Deno](https://hub.docker.com/r/denoland/deno), la cual tiene de base
 el sistema operativo Alpine, que es con el que cuentan
-la mayoría de imágenes de DockerHub. 
-
-Entre las ventajas de este sistema operativo se
-puede destacar que, en comparativa a otros, es de 
-menor tamaño, cuenta con menos herramientas
-preinstaladas y es más veloz.
+la mayoría de imágenes de DockerHub. Esta pesa 151MB.
 
 ## Sistema operativo + Deno
 
-Por las razones expuestas antes, Alpine es el
-mejor SO a considerar.
-
 [Alpine](https://hub.docker.com/_/alpine) es una imagen muy pequeña, de
 solo 5MB, por lo que es una buena opción, a la
-que habría que instalarle Deno.
+que habría que instalarle Deno. Entre las ventajas
+de este sistema operativo se puede destacar
+que, en comparativa a otros, es de menor tamaño,
+cuenta con menos herramientas preinstaladas y es 
+más veloz. Sin embargo, he comprobado que no es
+posible instalar Deno en la imagen oficial, por
+lo que la alternativa sería usar la imagen
+[Alpine con glibc preinstalado](https://hub.docker.com/r/frolvlad/alpine-glibc), lo que también puede resultar problemático al
+tratarse de una versión muy específica.
+
+[Debian](https://hub.docker.com/_/debian) el principal problema
+de esta imagen oficial es que es pesada (117MB),
+por lo que no tiene mucho sentido usarla cuando 
+precisamente es lo que estamos queriendo evitar.
+
+[Ubuntu](https://hub.docker.com/_/ubuntu) esta imagen,
+pese no a ser óptima por lo que pesa (77.9MB),
+es mejor que la opción mencionada anteriormente,
+ya que es aproximadamente un 33.4% más ligera.
+Añadiendo la instalación de Deno, el peso final
+de la imagen sería 223MB, que equivale a los 72MB
+que pesa Ubuntu más que Alpine.
+Si además usamos una estrategia de construcción
+multicapa, podemos reducir el tamaño a 215MB.
 
 ## Conclusión
 
-Finalmente, me he decantado por elegir Alpine e
-instalarle Deno, para profundizar en el aprendizaje
-y discernir de las elecciones de mis compañeros.
-
-Resulta que al querer instalar Deno en mi imagen,
-tengo que usar Alpine con glibc, así que instalaré
-concretamente la versión que incluye [glibc](https://github.com/Docker-Hub-frolvlad/docker-alpine-glibc).
+Para discernir de la elección de mis compañeros,
+que han usado la imagen oficial de Deno, siendo
+congruentes con los criterios establecidos y 
+tratando de seguir al máximo las buenas prácticas,
+la mejor alternativa es usar la imagen oficial de
+Ubuntu y tratar de reducir al máximo su tamaño al
+instalarle Deno.
