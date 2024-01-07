@@ -16,7 +16,7 @@ task("ejecutarAplicacion", [], function ejecutarAplicacion() {
 
 //Tarea para ejecutar los tests
 desc("Ejecutar los tests");
-task("testHorario", [], function ejecutarTests() {
+task("test", [], function ejecutarTests() {
     sh("deno test test/horario_test.ts");
 });
 
