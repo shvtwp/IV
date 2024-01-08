@@ -32,7 +32,7 @@ es [Deno](https://hub.docker.com/r/denoland/deno), la cual tiene de base
 el sistema operativo Alpine, que es con el que cuentan
 la mayoría de imágenes de DockerHub. Esta pesa 151MB.
 
-## Sistema operativo + Deno
+## Sistema operativo
 
 [Alpine](https://hub.docker.com/_/alpine) es una imagen muy pequeña, de
 solo 5MB, por lo que es una buena opción, a la
